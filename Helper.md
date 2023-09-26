@@ -15,19 +15,19 @@
     - [Normal Distribution](#normal-distribution)
     - [Poisson Distribution](#poisson-distribution)
 - [R Overview](#r-overview)
-  - [BASICS:](#basics)
+  - [Basics:](#basics)
     - [Creating a variable](#creating-a-variable)
     - [Creating a new list of numbers:](#creating-a-new-list-of-numbers)
     - [Creating a new list of Strings (words)](#creating-a-new-list-of-strings-words)
-  - [STATISTIC FUNCTIONS:](#statistic-functions)
+  - [Statistics Functions:](#statistics-functions)
     - [Simple Functions:](#simple-functions)
     - [Normal Distribution](#normal-distribution-1)
     - [Poisson Distribution](#poisson-distribution-1)
-  - [IMPORTING DATA:](#importing-data)
-  - [DATA SET FILTERS:](#data-set-filters)
+  - [Importing Data:](#importing-data)
+  - [Dataset Filtering:](#dataset-filtering)
     - [Getting a specific column:](#getting-a-specific-column)
     - [Filter based off of column:](#filter-based-off-of-column)
-  - [GRAPHS:](#graphs)
+  - [Graphs:](#graphs)
     - [Histogram:](#histogram)
     - [Bar Graph](#bar-graph)
     - [Boxplot:](#boxplot)
@@ -66,7 +66,7 @@ $$ P(X = k) = {\lambda^k e^{-\lambda}\over k!} $$
 
 # R Overview
 
-## BASICS:
+## Basics:
 
 ### Creating a variable
 newNum <- 1423\
@@ -79,7 +79,7 @@ newList <- c(1,2,3,4,5)
 newList <- c("Yoshi", "Sally")
 
 
-## STATISTIC FUNCTIONS:
+## Statistics Functions:
 
 ### Simple Functions:
 * Five number summary
@@ -114,28 +114,39 @@ newList <- c("Yoshi", "Sally")
 * Get number of successess from probability
     * qnorm( percentile, lambda)
 
-## IMPORTING DATA:
+## Importing Data:
 - Ensure file is in current working directory
 - headers = true if first line has titles
 
 importedData <- read.tables("TextFileName.txt", header = TRUE)
 
-## DATA SET FILTERS:
-newDataSet <- data.frame(owner = c("Joel", "Joel", "Joel", "Brie", "Brie")\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-name = c("Sally", "Bonzes", "Ghido", "Feather Cow", "Gray Cow"))
+## Dataset Filtering:
+newDataSet <- data.frame(gender = c("F", "F", "F", "M", "M"), temperature = c(98, 99, 97, 98, 97))
+```  
+    gender  temperature
+1    F          98
+2    F          99
+3    F          97
+4    M          98
+5    M          97
+```
+
 
 ### Getting a specific column:
-names <- newDataSet$name
-
+temperature <- newDataSet$temperature
+```
+[1] 98 99 97 98 97
+```
 ### Filter based off of column:
-bries_friends <- newDataSet[newDataSet$owner == "Brie",]
+white_temperatures <- newDataSet[newDataSet$gender == "F",]
+```
+    gender  temperature
+1    F          98
+2    F          99
+3    F          97
+```
 
-
-## GRAPHS:
+## Graphs:
 
 ### Histogram:
 histData <- c(4,6,2,5,3,6,4,2,4)\
