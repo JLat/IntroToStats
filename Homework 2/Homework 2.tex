@@ -1,0 +1,79 @@
+\documentclass{article}
+\usepackage{amsmath}
+\begin{document}
+
+
+Q1\\\\
+As sample size $>$ 30 central limit theory applies: \\
+$\sigma_{\overline{x}} = \frac{\sigma}{\sqrt{n}} = \frac{.62}{\sqrt{35}} = .105$ \\
+$\mu_{\overline{x}} = \mu = 98$
+
+\begin{equation*}
+\begin{split}
+P(\overline{X} <= 98.2) & = P(Z < \frac{98.2 - \mu_{\overline{x}}}{\sigma_{\overline{x}}}) \\
+& = P(Z < \frac{98.2 - 98}{.105})\\
+& = P(Z < 1.9)\\
+& = .86
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+P(random person) &= P( X< 98.2)\\
+& = .86
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+P(97.85 <= X <= 98.15) & = P(\frac{97.85 - \mu_{\overline{x}}}{\sigma_{\overline{x}}} < Z < \frac{98.15 - \mu_{\overline{x}}}{\sigma_{\overline{x}}})\\
+& = P(\frac{97.85 - 98}{.105} < Z < \frac{98.15 - 98}{.105})\\
+& = P(-1.43 < Z < 1.43)\\
+& = .924 - .764\\
+& = 0.16
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+P(X > 98.2 ) & = P(Z > \frac{98.2 - \mu_{\overline{x}}}{\sigma_{\overline{x}}})\\
+& = P(Z > \frac{98.2 - 98}{.105})\\
+& = P(Z > 1.90)\\
+& = 1 - P(Z < 1.90)\\
+& = 1 - .971\\
+& = 0.029
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+1- pnorm(98.7, 98, .62/sqrt(35)) = 1.199241e-11
+\end{equation*}
+\\
+
+Q2\\\\
+
+\begin{equation*}
+\begin{split}
+P(\textrm{within 3 units}) & = P(\frac{3}{\sigma_{\overline{x}}} < Z < \frac{-3}{\sigma_{\overline{x}}})\\
+& = P(\frac{3}{1.8} < Z < \frac{-3}{1.8})\\
+& = P(1.67 < Z < -1.67)\\
+& = 0.953 - 0.475\\
+& = 0.478
+\end{split}
+\end{equation*}
+\\
+
+Q3\\\\
+lv = 8.7 + qnorm(.1) * 2.2\\
+up = 8.7 + qnorm(.9) * 2.2\\
+Range is 5.9 tp 11.5 hrs/week of excercise is the average exercise of the middle 80\%\\
+\\
+
+\begin{equation*}
+\begin{split}
+P(Diabetic | At Risk) & = 
+
+
+
+
+\end{document}
