@@ -1,5 +1,43 @@
 # Stats Functions Cheat Sheet
 
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Stats Functions Cheat Sheet](#stats-functions-cheat-sheet)
+  - [Definition](#definition)
+  - [Equations](#equations)
+    - [Mean](#mean)
+    - [Standard Deviation](#standard-deviation)
+    - [Variance](#variance)
+    - [Bayes Theorem](#bayes-theorem)
+    - [Normal Distribution](#normal-distribution)
+    - [Poisson Distribution](#poisson-distribution)
+- [R Overview](#r-overview)
+  - [BASICS:](#basics)
+    - [Creating a variable](#creating-a-variable)
+    - [Creating a new list of numbers:](#creating-a-new-list-of-numbers)
+    - [Creating a new list of Strings (words)](#creating-a-new-list-of-strings-words)
+  - [STATISTIC FUNCTIONS:](#statistic-functions)
+    - [Simple Functions:](#simple-functions)
+    - [Normal Distribution](#normal-distribution-1)
+    - [Poisson Distribution](#poisson-distribution-1)
+  - [IMPORTING DATA:](#importing-data)
+  - [DATA SET FILTERS:](#data-set-filters)
+    - [Getting a specific column:](#getting-a-specific-column)
+    - [Filter based off of column:](#filter-based-off-of-column)
+  - [GRAPHS:](#graphs)
+    - [Histogram:](#histogram)
+    - [Bar Graph](#bar-graph)
+    - [Boxplot:](#boxplot)
+  - [Appendix:](#appendix)
+    - [Normal Distribution Table](#normal-distribution-table)
+
+<!-- /code_chunk_output -->
+
+
+
 ## Definition
 to be added....
 
