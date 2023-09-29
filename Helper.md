@@ -50,8 +50,12 @@ to be added....
 $$mean = \mu = {\text{sum of observations} \over \text{number of observations}} = {\sum x_i \over n}$$
 
 ### Expected Value
-$$ E(X) = \sum X\cdot P(X)$$
-$$ E(C \cdot X + N) = CE(X) + N $$
+```math
+\displaylines{
+ E(X) = \sum X\cdot P(X) \\
+ E(C \cdot X + N) = CE(X) + N
+}
+```
 
 ### Standard Deviation
 $$ \text{standard devation} = \sigma = \sqrt {{1\over N} \sum (x_i - \mu)^2} $$
@@ -61,18 +65,26 @@ $$ variance = \sigma^2 ={1\over N} \sum (x_i - \mu)^2 $$
 $$ Var (C\cdot X + N) = C^2 Var(X) $$
 
 ### Gold Standard
-$$ \text{Sensitivity (True Positive)} = P(+ | D) = {a \over (a + c)}$$
-$$ \text{Specificity (True Negative)} = P(- | D^c) = {d \over (b + d)} $$
-$$ \text{Positive predictive value (PPV)} = P(D | +) = {P(+|D)P(D) \over {P(+|D)P(D) + P(+|D^c)P(D^c)}} = { (Sens)(Prev) \over (Sens)(Prev) + (1-Spec)(1-Prev)}= {TP |\over TP + FP}$$
-$$ \text{Negative predictive value (NPV)} = P(D^c | -) = {{P(-|D^c)P(D^c) \over P(-|D^c)P(D^c) + P(-|D)P(D)}} = {(Spec)(1-Prev)\over (Spec)(1 -Prev) + (1- Sens)(Prev)} =  {TN \over TN + FN}$$
+```math
+\displaylines{
+\text{Sensitivity (True Positive)} = P(+ | D) = {a \over (a + c)}\\
+\text{Specificity (True Negative)} = P(- | D^c) = {d \over (b + d)}\\
+\text{Positive predictive value (PPV)} = P(D | +) = {P(+|D)P(D) \over {P(+|D)P(D) + P(+|D^c)P(D^c)}} = { (Sens)(Prev) \over (Sens)(Prev) + (1-Spec)(1-Prev)}= {TP |\over TP + FP} \\
+\text{Negative predictive value (NPV)} = P(D^c | -) = {{P(-|D^c)P(D^c) \over P(-|D^c)P(D^c) + P(-|D)P(D)}} = {(Spec)(1-Prev)\over (Spec)(1 -Prev) + (1- Sens)(Prev)} =  {TN \over TN + FN}
+}
+```
 
 ### Bayes Theorem
 $$ P(A | B) = {P(B | A) \cdot P(A) \over P(B) }$$
 
 ### Normal Distribution
-$$ f(x) = {1 \over \sigma \sqrt{2 \pi}} e^{-{1\over 2} {x - \mu \over \sigma}^2} $$
-$$ P(X < x) = P({x - \mu_x\over \sigma} < Z) \rightarrow \text{use table}$$
-$$ P(X \geq x) = 1 - P(X < x)$$
+```math
+\displaylines{
+f(x) = {1 \over \sigma \sqrt{2 \pi}} e^{-{1\over 2} {x - \mu \over \sigma}^2} \\
+P(X < x) = P({x - \mu_x\over \sigma} < Z) \rightarrow \text{use table} \\
+P(X \geq x) = 1 - P(X < x)
+}
+```
 
 ### Poisson Distribution
 $$ P(X = k) = {\lambda^k e^{-\lambda}\over k!} $$
