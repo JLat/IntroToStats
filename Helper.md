@@ -202,7 +202,7 @@ white_temperatures <- newDataSet[newDataSet$gender == "F",]
 
 ## Procedures:
 
-###Bootstraping
+### Bootstraping
 
 ```
 originalData <- read.tables("TextFileName.txt", header = TRUE)
@@ -218,8 +218,7 @@ for (i in 1:numBootstrapSteps){
 bootstrappedData <- unlist(lapply(data, mean))
 ```
 
-
-###Power
+### Power
 
 ```
 install.packge("pwr")
