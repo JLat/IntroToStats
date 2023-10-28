@@ -2,6 +2,7 @@
 \usepackage{amsmath}
 \begin{document}
 
+NOTE - TOTALLY USED CHATGPT...\\
 
 Q1\\\\
 As sample size $>$ 30 central limit theory applies: \\
@@ -71,8 +72,64 @@ Range is 5.9 tp 11.5 hrs/week of excercise is the average exercise of the middle
 
 \begin{equation*}
 \begin{split}
-P(Diabetic | At Risk) & = 
+P(at Risk) & = P(X< 6)\\
+& = P(Z <{6 - 8.6 \over 2.2} )\\
+& = P(Z < -1.22)\\
+& = 0.102 \\
+P(Diabetic | At Risk) & = {P(At Risk | Diabetic) \over P(At Risk)} \\
+& = {.078 \over .102}\\
+& = .76
+\end{split}
+\end{equation*}
+\\
 
+Q4\\\\
+I don't have the data :o\\
+
+Q5\\\\
+\begin{equation*}
+\begin{split}
+CI & = \hat{x} \pm Z^* {s \over \sqrt{n}}\\
+& = 9.7 \pm 1.96 {4.3 \over  \sqrt{18}}\\
+& = 9.7 \pm 1.99\\
+& = 7.71, 11.7
+\end{split}
+\end{equation*}
+\\
+
+Practical Interpretation: A 95\% confidence interval for the population mean rating of acceptable load is a range of values within which we are 95\% confident that the true population mean rating of acceptable load lies. In other words, if we were to take many random samples of 18 male postal workers and calculate 95\% confidence intervals for each sample mean, we would expect approximately 95\% of those intervals to contain the true population mean rating of acceptable load.\\\\
+Probability Interpretation: The probability that the true population mean rating of acceptable load falls within the calculated 95\% confidence interval is 95\%.\\\\
+CI is affected by inverse square of population, so  CI range will shrink\\\\
+CI range is proportional to  confidence so val increases\\\\
+CI range is proportional so decrease sdev decreases CI\\\\
+\\
+Param of interest is mean rating of acceptable load (X)\\
+Null Hypothesis: $X = 12kg$\\
+Alternative Hypothesis: $X \neq 12kg$\\
+Sinificance Level:$\alpha = .05$\\
+Confirm data is normal\\
+Can use Z (assuming data is normal)\\
+\begin{equation*}
+\begin{split}
+z & = {\overline x - \mu \over ({\sigma \over \sqrt{n}})}\\
+& = {(9.7 - 12) \over (4.3 {1\over\sqrt{18}}) }\\
+& = -2.27
+\end{split}
+\end{equation*}
+\\
+For 5\% sig level critical value is 1.96. $|-2.27| > 1.96 $ so test passes\\\\
+If 12kg was within our initial confidence interval
+\\
+
+Q6\\\\
+\begin{equation*}
+\begin{split}
+4 & = Z^* {s \over \sqrt{n}}\\
+n &= ({Z^x s \over 4})^2\\
+& =  ({1.64 \cdot \sqrt{126} \over 4} )^2\\
+& = 21 \rightarrow 22 people
+\end{split}
+\end{equation*}
 
 
 

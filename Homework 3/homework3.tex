@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{listings}
+\begin{document}
+
+
+Q1\\\\
+
+Param of interest: heart rate after 15 min of bowling\\
+Null Hypothesis: $\mu = 98bpm$\\
+Alt Hypothesis: $\mu \neq 98bpm$\\
+Signifcance: $\alpha = 0.01$\\
+Type of test: Parted t-test\\
+\begin{equation*}
+\begin{split}
+    t & = \frac{\overline{x} - \mu}{s / \sqrt{n}}\\
+    & = \frac{101-98}{15/\sqrt{14}}\\
+    & = .05
+\end{split}
+\end{equation*}
+df = 13\\
+sig level = .01\\
+From t-table $\rightarrow 3.012 > |.05|$ \\
+So pass \\ \\ \\
+
+Param of interest: heart rate after 15 min of bowling\\
+Null Hypothesis: $\mu = 66bpm$\\
+Alt Hypothesis: $\mu > 66bpm$\\
+Signifcance: $\alpha = 0.01$\\
+Type of test: one-sample t-test\\
+\begin{equation*}
+\begin{split}
+    t & = \frac{\overline{x} - \mu}{s / \sqrt{n}}\\
+    & = \frac{101-66}{15/\sqrt{14}}\\
+    & = 8.73
+\end{split}
+\end{equation*}
+df = 13\\
+sig level = .01\\
+From t-table $\rightarrow 2.65 < |8.73|$ \\
+So fail\\\\
+
+
+Q2\\\\
+
+\begin{equation*}
+\begin{split}
+    W & = 145.349 - 134.651\\
+    & = 10.698\\
+    W & =  2Z\frac{s}{\sqrt{n}}\\
+    10.698 & = 2Z\frac{25}{\sqrt{66}}\\
+    Z & = 10.698 (1/2) (\sqrt{66}) (1/25)\\
+    Z & = 1.74
+\end{split}
+\end{equation*}
+From z table, 95\% confidence\\
+They are 95\% sure the actual value falls within the interval\\
+Significance level to use = 100\% - 95\% - 5\%\\
+144 is within the interval, so null hypothesis would pass\\\\
+
+Q3\\\\
+Null Hypothesis: $\mu_{generic} = \mu_{brand} = 1.5hrs$\\
+Alt Hypothesis: $\mu_{generic} \neq \mu_{brand}$ \\
+Not sure how to calc type 2 errors :P\\
+
+\begin{lstlisting}[language=R]
+    alpha <- 0.03
+    sigma <- 0.25
+    mu_generic <- 1.4
+    n <- 36
+
+    # Find the critical z-values
+    z_alpha <- qnorm(1 - alpha / 2)
+    
+    # Calculate the z-score for mu_generic
+    z <- (mu_generic - 1.5) / (sigma / sqrt(n))
+    
+    # Calculate the power
+    power <- pnorm(z, lower.tail = FALSE) + pnorm(-z, lower.tail = TRUE)
+    
+    print(power)
+\end{lstlisting}
+
+Honestly not sure what it's asking me to do lol...\\\\
+
+Q4\\\\
+
+
+
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.25)  25 SEP 2023 18:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.25)  4 OCT 2023 21:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -91,8 +91,7 @@ LaTeX Info: Redefining \] on input line 2954.
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count271
 \l__pdf_internal_box=\box53
-)
-No file "Homework 2".aux.
+) (./Homework 2.aux)
 \openout1 = `"Homework 2.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -110,132 +109,161 @@ LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--10
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 [1
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--71
+Underfull \hbox (badness 10000) in paragraph at lines 67--72
 
  []
 
-Runaway argument?
- P(Diabetic | At Risk) & = 
-c:/Users/Joel/Documents/Brianna's School/Homework 2/Homework 2.tex:75: Paragraph ended before \split was complete.
-<to be read again> 
-                   \par 
-l.75 
-     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
 
-c:/Users/Joel/Documents/Brianna's School/Homework 2/Homework 2.tex:75: Missing $ inserted.
-<inserted text> 
-                $
-l.75 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-c:/Users/Joel/Documents/Brianna's School/Homework 2/Homework 2.tex:75: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.75 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/Joel/Documents/Brianna's School/Homework 2/Homework 2.tex:75: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.75 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-c:/Users/Joel/Documents/Brianna's School/Homework 2/Homework 2.tex:75: Display math should end with $$.
-<to be read again> 
-                   \tex_par:D 
-l.75 
-     
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 82.
 
 
-c:/Users/Joel/Documents/Brianna's School/Homework 2/Homework 2.tex:79: LaTeX Error: \begin{equation*} on input line 72 ended by \end{document}.
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.79 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
-[2] (./Homework 2.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+[3] [4] (./Homework 2.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 72 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 1142 strings out of 474927
- 17423 string characters out of 5763535
+ 1145 strings out of 474927
+ 17480 string characters out of 5763535
  1931785 words of memory out of 5000000
- 22756 multiletter control sequences out of 15000+600000
+ 22757 multiletter control sequences out of 15000+600000
  558523 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,65p,272b,201s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,17n,65p,570b,201s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "Homework 2.pdf" (2 pages, 67967 bytes).
+Output written on "Homework 2.pdf" (4 pages, 80460 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
