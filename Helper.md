@@ -86,14 +86,14 @@ Probability of binomial events
 $P(X = x) = P (\text{x successes among n trials})$  
 $\frac{n!}{x!(n-x)!}p^x(1-p)^n-x, \text{where x = 0,1,2...n}$
 
-Population mean: $E(X) = n-p$
-Population variance: $Var(x) = np(1-p)$
-Population SD = $SD(X) = \sqrt{np(1-p)}$
+Population mean: $E(X) = n-p$  
+Population variance: $Var(x) = np(1-p)$  
+Population SD = $SD(X) = \sqrt{np(1-p)}$  
 
 R Code
 ```
-dbinom(x,n,p) binomical probablity for a single x value
-pbinom(x,n,p) binomial probability for values lesss then or eqaul to X
+dbinom(x,n,p) binomial probability for a single x value
+pbinom(x,n,p) binomial probability for values less then or equal to X
 ```
 
 Assumption:
@@ -107,10 +107,10 @@ Assumption:
 - Used for counts of events in a fixed span of time, length, area, volume
 
 Assumptions:
-- The random variable is the number of occurences of an event over a specified interval
-- Occurences are random
-- The occcurences are independent of each other in an interval and between intervals
-- The occurences are uniormly distributed overr the interval
+- The random variable is the number of occurrences of an event over a specified interval
+- Occurrences are random
+- The occurrences are independent of each other in an interval and between intervals
+- The occurrences are uniformly distributed over the interval
 
 $$ P(X = x) = P(\text{x events occur in given interval}) = {\lambda^x e^{-\lambda}\over x!} \text{where x = 0,1,2,3} $$ 
 
@@ -134,19 +134,21 @@ Notation: $X \sim N(\mu, \sigma^2)$ *Joel Note: internet says it isn't squared?*
 
 Assumptions
 1. Unimodal & max values occur at the population mean
-2. Normla distribution is symettric about the mean
+2. Normla distribution is symmetric about the mean
 3. Rangnge: $(-\infty, \infty)$
 4. 68 - 95 - 99.7
 
-Transforming non standard normal distribution to stanard normal distribution
+Transforming non standard normal distribution to standard normal distribution
 
 $Z = \frac{x - \mu}{\sigma}$ is standard normal $(z - N |0,1|)$
 
-qqnorm(
-qqline(
+```
+qqnorm()
+qqline()
+```
 
 ### The Central Limit Theorem
-The standardize version of the sample mean $\overline{X}$ is approximatly distributed accordingly
+The standardized version of the sample mean $\overline{X}$ is approximately distributed accordingly
 ```math
 \displaylines{
 \overline{X} \sim N (\mu, \frac{\sigma^2}{n}) \rightarrow \frac{\overline{x} - \mu}{\sigma\over{\sqrt{n}}} \sim N(0,1)
@@ -155,10 +157,10 @@ The standardize version of the sample mean $\overline{X}$ is approximatly distri
 
 Key Points:
 1. The CLT applies regardless of distributions of the individual values
-2. The quality of the normal approximation varies if the underlying distribution is normal, the approximation is perfect. If the underlying distribution is skewed, the approximation may be poor for small to moderate smaple size
+2. The quality of the normal approximation varies if the underlying distribution is normal, the approximation is perfect. If the underlying distribution is skewed, the approximation may be poor for small to moderate sample size
 3. Sample size: 30 (at least)
-4. SD = variablility within a single smaple
-SError = variability accross multiple sample means
+4. SD = variability within a single sample
+SError = variability across multiple sample means
 
 ### Confidence Interval
 
@@ -182,8 +184,8 @@ $CI = x \pm t_{(n-1) \frac{\alpha}{2}}\frac{s}{\sqrt{n}}$ *Joel Note: I can't re
 Test statistic for hypothesis for an unknown variance.
 $T = \frac{\overline{x}-\mu}{\frac{s}{\sqrt{n}}}$
 
-One sample T-Test in R
-$ H_1 > H_0$
+One sample T-Test in R  
+$H_1 > H_0$
 ```
 t.test(variable name, mu = hypothesized value, alternative = "greater", conf.level = 0.95)
 ```
@@ -240,7 +242,7 @@ Assumptions
 
 ```math
 \displaylines{
-T = \frac{\overline{x}_1 - \overline{x}_2 - \mu_1 - \mu_2}{s\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}$ where $ S = \sqrt{(n_1-1)s_1^2 + (n_2-1)s_2^2}\\
+T = \frac{\overline{x}_1 - \overline{x}_2 - \mu_1 - \mu_2}{s\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \text{ where } S = \sqrt{(n_1-1)s_1^2 + (n_2-1)s_2^2}\\
 T = t_{n_1 + n+2 - 2} \text{ under } H_0 \rightarrow T - t_20
 }
 ```
