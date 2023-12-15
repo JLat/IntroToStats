@@ -81,9 +81,9 @@ You can't use a contingency table for PPV & NPV. Study could have been designed 
 
 ### Binomial Distribution
 
-Notation: $X\sim Bin(n,p)$
-Probability of binomial events
-$P(X = x) = P (\text{x successes among n trials})$
+Notation: $X\sim Bin(n,p)$  
+Probability of binomial events  
+$P(X = x) = P (\text{x successes among n trials})$  
 $\frac{n!}{x!(n-x)!}p^x(1-p)^n-x, \text{where x = 0,1,2...n}$
 
 Population mean: $E(X) = n-p$
@@ -112,12 +112,12 @@ Assumptions:
 - The occcurences are independent of each other in an interval and between intervals
 - The occurences are uniormly distributed overr the interval
 
-$$ P(X = x) = P(\text{x events occur in given interval}) = {\lambda^x e^{-\lambda}\over x!} \text{where x = 0,1,2,3} $$
+$$ P(X = x) = P(\text{x events occur in given interval}) = {\lambda^x e^{-\lambda}\over x!} \text{where x = 0,1,2,3} $$ 
 
-Notation: $ X \sim P_o(\lambda)$
-Population mean = $E(x) = \lambda$
-Population variance: $Var(x) \approx \lambda$
-Population SD = $SD(X) = \sqrt{\lambda}$
+Notation: $X \sim P_o(\lambda)$  
+Population mean = $E(x) = \lambda$  
+Population variance: $Var(x) \approx \lambda$  
+Population SD = $SD(X) = \sqrt{\lambda}$  
 
 R Code:
 ```
