@@ -147,7 +147,11 @@ qqline(
 
 ### The Central Limit Theorem
 The standardize version of the sample mean $\overline{X}$ is approximatly distributed accordingly
-$$ \overline{X} \sim N (\mu, \frac{\sigma^2}{n}) \rightarrow \frac{\overline{x} - \mu}{\sigma\over{\sqrt{n}}} \sim N(0,1)$$
+```math
+\displaylines{
+\overline{X} \sim N (\mu, \frac{\sigma^2}{n}) \rightarrow \frac{\overline{x} - \mu}{\sigma\over{\sqrt{n}}} \sim N(0,1)
+}
+```
 
 Key Points:
 1. The CLT applies regardless of distributions of the individual values
@@ -194,11 +198,16 @@ t.test(variable name, mu = hypothesized value, conf.level = 0.95)
 ```
 
 Power Calculations
-$H_1 \mu > \mu_0 Power = P(z > z_{1-\alpha} - d\sqrt{n})$ *Joel Note: I can not tell what symbol this was supposed to be*
-$H_1 \mu< \mu_0  Power = P(z < z_{1-\alpha} - d\sqrt{n})$
+*Joel Note: I can not tell what symbol this was supposed to be*
+```math
+\displaylines{
+H_1 \mu > \mu_0 Power = P(z > z_{1-\alpha} - d\sqrt{n}) 
+H_1 \mu< \mu_0  Power = P(z < z_{1-\alpha} - d\sqrt{n})
+}
+```
 
 ###Propeties of a Sampling Distribution
-$$\overline{x}_1 - \overline{x}_2$$
+$\overline{x}_1 - \overline{x}_2$
 $\mu_{\overline{x}_1 - \overline{x}_2} = E(\overline{x}_1 - \overline{x}_2) = E(\overline{x}_1) - E(\overline{x}_2) = \mu_1 - \mu_2$
 $\sigma^2_{\overline{x}_1 - \overline{x}_2} = var(\overline{x}_1) + var(\overline{x}_2) = \frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2}$
 Notation: $\overline{x}_1 - \overline{x}_2 \sim N (\mu_1 - \mu_2 \frac{\sigma^2_1}{n_1} + \frac{\sigma^2_2}{n_2})$
@@ -208,7 +217,9 @@ Necessary assumption
 - Sufficiently large sample > 30 for each group
 - Normality check w/ qq c histogram
 
-equal varaince $CI = (\overline{x}_1 - \overline{x}_2) \pm t_{n_1 + n_2 - 2}, \frac{\alpha}{2} s \sqrt{\frac{1}{n_1} + \frac{1}{n+_2}}$ *Joel Note: Would recommend not writing math formulas with a caligraphy pen...
+equal varaince 
+$CI = (\overline{x}_1 - \overline{x}_2) \pm t_{n_1 + n_2 - 2}, \frac{\alpha}{2} s \sqrt{\frac{1}{n_1} + \frac{1}{n+_2}}$
+*Joel Note: Would recommend not writing math formulas with a caligraphy pen...
 
 2 Sample T-Test
 $H_0: \mu_1 - \mu_0 = 0 \rightarrow \mu1 = \mu2\text{ vs } H_1: \mu_1 -\mu_2 \neq 0 \rightarrow \mu_1 \neq \mu2$
@@ -218,12 +229,21 @@ Assumptions
 - 2 normally distributed groups
 - Equal variance
 
-$T = \frac{\overline{x}_1 - \overline{x}_2 - \mu_1 - \mu_2}{s\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}$ where $ S = \sqrt{(n_1-1)s_1^2 + (n_2-1)s_2^2}$
-$T = t_{n_1 + n+2 - 2} \text{ under } H_0 \rightarrow T - t_20$
+```math
+\displaylines{
+T = \frac{\overline{x}_1 - \overline{x}_2 - \mu_1 - \mu_2}{s\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}$ where $ S = \sqrt{(n_1-1)s_1^2 + (n_2-1)s_2^2}
+T = t_{n_1 + n+2 - 2} \text{ under } H_0 \rightarrow T - t_20
+}
+```
 
 ### 2 Sample T-Test Unequal Variances
-$T = \frac{\overline{x}_1 - \overline{x}_2 - \mu_1 - \mu_2}{s\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \sim tdf \text{ under } H_0$
-$df = \frac{(v_1 + v_2)^2}{\frac{v_1^2}+{n_1 -1} + \frac{v_2^2}+{n_2 -1}}\text{ where } \frac{s_1^2}{n_1}v_2\frac{s_2^2}{n_2}$ *Joel Note: What?*
+```math
+\displaylines{
+T = \frac{\overline{x}_1 - \overline{x}_2 - \mu_1 - \mu_2}{s\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}} \sim tdf \text{ under } H_0
+df = \frac{(v_1 + v_2)^2}{\frac{v_1^2}+{n_1 -1} + \frac{v_2^2}+{n_2 -1}}\text{ where } \frac{s_1^2}{n_1}v_2\frac{s_2^2}{n_2}
+}
+```
+*Joel Note: What?*
 
 CI for a difference of means & unequal variance
 $(\overline{x}_1 - \overline{x}_2)\pm t_df \frac{\alpha}{2}\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$
